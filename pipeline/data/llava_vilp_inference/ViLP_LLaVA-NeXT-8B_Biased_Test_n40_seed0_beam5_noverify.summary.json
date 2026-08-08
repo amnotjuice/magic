@@ -1,0 +1,17 @@
+{
+  "n": 40,
+  "metrics": {
+    "default_hit": 0.225,
+    "answer_format_hit": 0.175,
+    "paraphrase_hit": 0.2,
+    "prior_suppressed_hit": 0.0,
+    "question_tail_hit": 0.0,
+    "beam_oracle_hit": 0.725,
+    "oracle_hit": 0.725,
+    "real_verify_hit": 0.0,
+    "lift_verify_hit": 0.0,
+    "direct_real_hit": 0.2,
+    "direct_lift_hit": 0.325
+  },
+  "avg_candidates": 4.95
+}

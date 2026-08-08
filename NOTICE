@@ -1,0 +1,22 @@
+MAGIC: Margin-gated Contrastive Debiasing with Evidence Restoration
+Copyright (c) 2026 shunshungu
+
+This repository contains the reference implementation of MAGIC and the
+code used to reproduce the results reported in the paper.
+
+Baselines compared against in the paper (SCI, VCD, M3ID, TIE) are not
+vendored here; only frozen result snapshots used for comparison are
+included where noted in experiments/data/.
+
+`pipeline/vlmeval/` is a trimmed copy of a private fork of VLMEvalKit v0.2
+(https://github.com/open-compass/VLMEvalKit), Copyright VLMEvalKit
+Authors, licensed under the Apache License, Version 2.0
+(http://www.apache.org/licenses/LICENSE-2.0). Only the two backbone
+model wrappers this project patched (`vlm/qwen2_vl/`, `vlm/llava/`) plus
+the core framework they require are included; the ~60 other model
+wrappers and the commercial-API adapters from the upstream fork are not.
+The `qwen2_vl/model.py` and `llava/llava.py` files in this trimmed copy
+contain modifications made for this project (VCF/TCF perturbation
+handling, logit-dump hooks) on top of the upstream VLMEvalKit code; see
+the top-level README's Scope section and `pipeline/README.md` for what
+this pipeline does and does not reproduce.

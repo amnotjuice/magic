@@ -1,0 +1,128 @@
+{
+  "qwen": {
+    "n": 294,
+    "blank": {
+      "acc": 32.31,
+      "vs_deployed": {
+        "win": 2,
+        "loss": 8,
+        "p": 0.109
+      }
+    },
+    "noise": {
+      "acc": 31.97,
+      "vs_deployed": {
+        "win": 3,
+        "loss": 10,
+        "p": 0.092
+      }
+    },
+    "gray": {
+      "acc": 30.95,
+      "vs_deployed": {
+        "win": 1,
+        "loss": 11,
+        "p": 0.006
+      }
+    },
+    "blur": {
+      "acc": 32.31,
+      "vs_deployed": {
+        "win": 3,
+        "loss": 9,
+        "p": 0.146
+      }
+    },
+    "mask": {
+      "acc": 34.01,
+      "vs_deployed": {
+        "win": 3,
+        "loss": 4,
+        "p": 1.0
+      }
+    },
+    "deployed": {
+      "acc": 34.35,
+      "vs_deployed": null
+    },
+    "+noise": {
+      "acc": 34.01,
+      "vs_deployed": {
+        "win": 0,
+        "loss": 1,
+        "p": 1.0
+      }
+    },
+    "all five": {
+      "acc": 34.35,
+      "vs_deployed": {
+        "win": 1,
+        "loss": 1,
+        "p": 1.0
+      }
+    }
+  },
+  "llava": {
+    "n": 639,
+    "blank": {
+      "acc": 30.36,
+      "vs_deployed": {
+        "win": 2,
+        "loss": 2,
+        "p": 1.0
+      }
+    },
+    "noise": {
+      "acc": 30.67,
+      "vs_deployed": {
+        "win": 5,
+        "loss": 3,
+        "p": 0.727
+      }
+    },
+    "gray": {
+      "acc": 30.36,
+      "vs_deployed": {
+        "win": 2,
+        "loss": 2,
+        "p": 1.0
+      }
+    },
+    "blur": {
+      "acc": 30.2,
+      "vs_deployed": {
+        "win": 1,
+        "loss": 2,
+        "p": 1.0
+      }
+    },
+    "mask": {
+      "acc": 30.2,
+      "vs_deployed": {
+        "win": 1,
+        "loss": 2,
+        "p": 1.0
+      }
+    },
+    "deployed": {
+      "acc": 30.36,
+      "vs_deployed": null
+    },
+    "+noise": {
+      "acc": 30.2,
+      "vs_deployed": {
+        "win": 0,
+        "loss": 1,
+        "p": 1.0
+      }
+    },
+    "all five": {
+      "acc": 30.2,
+      "vs_deployed": {
+        "win": 0,
+        "loss": 1,
+        "p": 1.0
+      }
+    }
+  }
+}

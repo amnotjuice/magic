@@ -1,0 +1,18 @@
+{
+  "n": 68,
+  "metrics": {
+    "default_hit": 0.27941176470588236,
+    "answer_format_hit": 0.4411764705882353,
+    "paraphrase_hit": 0.3235294117647059,
+    "oracle_hit": 1.0,
+    "real_verify_hit": 0.36764705882352944,
+    "lift_verify_hit": 0.4117647058823529,
+    "direct_real_hit": 0.35294117647058826,
+    "direct_lift_hit": 0.38235294117647056,
+    "binary_option_real_hit": 0.3088235294117647,
+    "binary_option_lift_hit": 0.4411764705882353,
+    "hybrid_lift_hit": 0.4411764705882353
+  },
+  "avg_candidates": 2.0,
+  "binary_rows": 68
+}

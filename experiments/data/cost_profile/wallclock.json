@@ -1,0 +1,15 @@
+{
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "gen_tokens": 32,
+  "reps": 12,
+  "qwen": {
+    "t_score_s": 0.9151715016923845,
+    "t_gen_s": 1.3390203723683953,
+    "prompt_tokens": 1361
+  },
+  "llava": {
+    "t_score_s": 0.12950502103194594,
+    "t_gen_s": 0.4726605098694563,
+    "prompt_tokens": 1231
+  }
+}

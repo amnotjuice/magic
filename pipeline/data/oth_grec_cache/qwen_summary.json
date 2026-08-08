@@ -1,0 +1,267 @@
+{
+  "name": "CDA-v2 Oth true candidate-level GREC",
+  "score": "final(y)=S0(y)+T*C_T(y)+V*softmax(C_T)(y)*R_V(y)",
+  "split": "Test",
+  "model": "qwen",
+  "variants": {
+    "tc_energy": {
+      "metrics": {
+        "B_MCQ": {
+          "accuracy": 42.9,
+          "hits": 465.0,
+          "n": 1084
+        },
+        "B_Oth": {
+          "accuracy": 24.55,
+          "hits": 81.0,
+          "n": 330
+        },
+        "B_All": {
+          "accuracy": 38.61,
+          "hits": 546.0,
+          "n": 1414
+        },
+        "S_MCQ": {
+          "accuracy": 46.18,
+          "hits": 127.0,
+          "n": 275
+        },
+        "S_Oth": {
+          "accuracy": 44.01,
+          "hits": 136.0,
+          "n": 309
+        },
+        "S_All": {
+          "accuracy": 45.03,
+          "hits": 263.0,
+          "n": 584
+        },
+        "BS_MCQ": {
+          "accuracy": 42.7,
+          "hits": 538.0,
+          "n": 1260
+        },
+        "BS_Oth": {
+          "accuracy": 33.98,
+          "hits": 174.0,
+          "n": 512
+        },
+        "BS_All": {
+          "accuracy": 40.18,
+          "hits": 712.0,
+          "n": 1772
+        }
+      },
+      "format_counts": {
+        "MCQ": 1260,
+        "Oth": 512
+      },
+      "route_mode_counts": {
+        "both": 280,
+        "neither": 116,
+        "tcf_only": 257,
+        "vcf_only": 1119
+      },
+      "state_counts": {
+        "grec_hard_composition_gate": 1260,
+        "stable_preserve": 5,
+        "tc_grounding_energy": 507
+      }
+    },
+    "vc_residual": {
+      "metrics": {
+        "B_MCQ": {
+          "accuracy": 42.9,
+          "hits": 465.0,
+          "n": 1084
+        },
+        "B_Oth": {
+          "accuracy": 27.27,
+          "hits": 90.0,
+          "n": 330
+        },
+        "B_All": {
+          "accuracy": 39.25,
+          "hits": 555.0,
+          "n": 1414
+        },
+        "S_MCQ": {
+          "accuracy": 46.18,
+          "hits": 127.0,
+          "n": 275
+        },
+        "S_Oth": {
+          "accuracy": 48.22,
+          "hits": 149.0,
+          "n": 309
+        },
+        "S_All": {
+          "accuracy": 47.26,
+          "hits": 276.0,
+          "n": 584
+        },
+        "BS_MCQ": {
+          "accuracy": 42.7,
+          "hits": 538.0,
+          "n": 1260
+        },
+        "BS_Oth": {
+          "accuracy": 36.33,
+          "hits": 186.0,
+          "n": 512
+        },
+        "BS_All": {
+          "accuracy": 40.86,
+          "hits": 724.0,
+          "n": 1772
+        }
+      },
+      "format_counts": {
+        "MCQ": 1260,
+        "Oth": 512
+      },
+      "route_mode_counts": {
+        "both": 280,
+        "neither": 116,
+        "tcf_only": 257,
+        "vcf_only": 1119
+      },
+      "state_counts": {
+        "grec_hard_composition_gate": 1260,
+        "stable_preserve": 5,
+        "tc_grounding_energy": 140,
+        "vc_counterfactual_residual": 367
+      }
+    },
+    "grec_energy": {
+      "metrics": {
+        "B_MCQ": {
+          "accuracy": 42.9,
+          "hits": 465.0,
+          "n": 1084
+        },
+        "B_Oth": {
+          "accuracy": 28.79,
+          "hits": 95.0,
+          "n": 330
+        },
+        "B_All": {
+          "accuracy": 39.6,
+          "hits": 560.0,
+          "n": 1414
+        },
+        "S_MCQ": {
+          "accuracy": 46.18,
+          "hits": 127.0,
+          "n": 275
+        },
+        "S_Oth": {
+          "accuracy": 49.19,
+          "hits": 152.0,
+          "n": 309
+        },
+        "S_All": {
+          "accuracy": 47.77,
+          "hits": 279.0,
+          "n": 584
+        },
+        "BS_MCQ": {
+          "accuracy": 42.7,
+          "hits": 538.0,
+          "n": 1260
+        },
+        "BS_Oth": {
+          "accuracy": 37.11,
+          "hits": 190.0,
+          "n": 512
+        },
+        "BS_All": {
+          "accuracy": 41.08,
+          "hits": 728.0,
+          "n": 1772
+        }
+      },
+      "format_counts": {
+        "MCQ": 1260,
+        "Oth": 512
+      },
+      "route_mode_counts": {
+        "both": 280,
+        "neither": 116,
+        "tcf_only": 257,
+        "vcf_only": 1119
+      },
+      "state_counts": {
+        "grec_energy_no_base": 367,
+        "grec_hard_composition_gate": 1260,
+        "stable_preserve": 5,
+        "tc_grounding_energy": 140
+      }
+    },
+    "grec_score": {
+      "metrics": {
+        "B_MCQ": {
+          "accuracy": 42.9,
+          "hits": 465.0,
+          "n": 1084
+        },
+        "B_Oth": {
+          "accuracy": 19.7,
+          "hits": 65.0,
+          "n": 330
+        },
+        "B_All": {
+          "accuracy": 37.48,
+          "hits": 530.0,
+          "n": 1414
+        },
+        "S_MCQ": {
+          "accuracy": 46.18,
+          "hits": 127.0,
+          "n": 275
+        },
+        "S_Oth": {
+          "accuracy": 44.01,
+          "hits": 136.0,
+          "n": 309
+        },
+        "S_All": {
+          "accuracy": 45.03,
+          "hits": 263.0,
+          "n": 584
+        },
+        "BS_MCQ": {
+          "accuracy": 42.7,
+          "hits": 538.0,
+          "n": 1260
+        },
+        "BS_Oth": {
+          "accuracy": 31.84,
+          "hits": 163.0,
+          "n": 512
+        },
+        "BS_All": {
+          "accuracy": 39.56,
+          "hits": 701.0,
+          "n": 1772
+        }
+      },
+      "format_counts": {
+        "MCQ": 1260,
+        "Oth": 512
+      },
+      "route_mode_counts": {
+        "both": 280,
+        "neither": 116,
+        "tcf_only": 257,
+        "vcf_only": 1119
+      },
+      "state_counts": {
+        "grec_hard_composition_gate": 1260,
+        "grec_score": 367,
+        "stable_preserve": 5,
+        "tc_grounding_energy": 140
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "name": "CDA-v2 / Module 2: TC Adaptive-Aug-v2",
+  "status": "module_level_cache_summary",
+  "prompt_pools": {
+    "clean1": [
+      "default"
+    ],
+    "clean2": [
+      "default",
+      "answer_format"
+    ],
+    "clean3": [
+      "default",
+      "answer_format",
+      "paraphrase"
+    ]
+  },
+  "main_prompt_pool": "clean2",
+  "detection_v2_gate": {
+    "status": "recorded_not_applied_to_module_cache",
+    "detector": "retention_top",
+    "meaning": "gate TC action when predicted mode is tcf_only or both",
+    "path": "/data/shunshungu/Self-Critical-Inference-Framework/research/log/retention_detector/summary.json",
+    "models": {
+      "qwen": {
+        "features": {
+          "T": "T_top",
+          "V": "V_top"
+        },
+        "thresholds": {
+          "T": 0.08388921358421464,
+          "V": 0.19085343324145
+        },
+        "test_mode_acc": 0.7652656621728786,
+        "test_macro_f1_3way": 0.626780691146641
+      },
+      "llava": {
+        "features": {
+          "T": "T_top",
+          "V": "V_top"
+        },
+        "thresholds": {
+          "T": 0.5,
+          "V": 0.17694237294524687
+        },
+        "test_mode_acc": 0.9088330632090762,
+        "test_macro_f1_3way": 0.8614828375625082
+      }
+    }
+  },
+  "cost_model": {
+    "MCQ_clean2": "original real + answer_format real + matched blank/prior scores from cache; final online accounting should reuse Detection-v2 probes where possible",
+    "Oth_candidate_lift": "candidate proposal + one real scoring pass + one blank scoring pass when implemented with vectorized candidate scoring",
+    "margin_fallback": "no extra model forward; uses top1-top2 visual-lift margin"
+  },
+  "models": {
+    "qwen": {
+      "mcq_variants": {
+        "clean1_mcq": {
+          "B_MCQ": 27.12,
+          "S_MCQ": 46.91,
+          "BS_MCQ": 29.37
+        },
+        "clean2_mcq": {
+          "B_MCQ": 28.51,
+          "S_MCQ": 47.27,
+          "BS_MCQ": 30.56
+        },
+        "clean3_mcq": {
+          "B_MCQ": 28.14,
+          "S_MCQ": 47.64,
+          "BS_MCQ": 30.32
+        }
+      },
+      "oth_counts": {
+        "B_Oth": 330,
+        "S_Oth": 309,
+        "BS_Oth": 512
+      },
+      "oth_baseline": {
+        "B_Oth": 12.42,
+        "S_Oth": 33.98,
+        "BS_Oth": 24.02
+      },
+      "oth_fixed_lift": {
+        "B_Oth": 24.85,
+        "S_Oth": 44.34,
+        "BS_Oth": 34.38
+      },
+      "oth_margin_fallback": {
+        "B_Oth": 20.0,
+        "S_Oth": 42.72,
+        "BS_Oth": 32.42
+      },
+      "oth_margin_fit": {
+        "MME": {
+          "tau": 1.653032973408699,
+          "val_acc": 0.4411764705882353,
+          "target_group": "BS",
+          "enabled": true
+        },
+        "ViLP": {
+          "tau": null,
+          "val_acc": null,
+          "target_group": "BS",
+          "enabled": false,
+          "reason": "no matching Val cache"
+        }
+      },
+      "oth_actions": [
+        "direct_answer_token_visual_lift"
+      ]
+    },
+    "llava": {
+      "mcq_variants": {
+        "clean1_mcq": {
+          "B_MCQ": 26.45,
+          "S_MCQ": 39.11,
+          "BS_MCQ": 30.16
+        },
+        "clean2_mcq": {
+          "B_MCQ": 26.61,
+          "S_MCQ": 40.4,
+          "BS_MCQ": 30.73
+        },
+        "clean3_mcq": {
+          "B_MCQ": 26.67,
+          "S_MCQ": 41.78,
+          "BS_MCQ": 31.09
+        }
+      },
+      "oth_counts": {
+        "B_Oth": 349,
+        "S_Oth": 578,
+        "BS_Oth": 796
+      },
+      "oth_baseline": {
+        "B_Oth": 19.77,
+        "S_Oth": 49.48,
+        "BS_Oth": 37.31
+      },
+      "oth_fixed_lift": {
+        "B_Oth": 42.69,
+        "S_Oth": 59.17,
+        "BS_Oth": 53.27
+      },
+      "oth_margin_fallback": {
+        "B_Oth": 43.84,
+        "S_Oth": 57.44,
+        "BS_Oth": 52.01
+      },
+      "oth_margin_fit": {
+        "MME": {
+          "tau": 1.1875,
+          "val_acc": 0.625,
+          "target_group": "BS",
+          "enabled": true
+        },
+        "ViLP": {
+          "tau": -1e-12,
+          "val_acc": 0.4264705882352941,
+          "target_group": "BS",
+          "enabled": true
+        }
+      },
+      "oth_actions": [
+        "beam_candidate_direct_visual_lift",
+        "binary_clean2_visual_lift"
+      ]
+    }
+  }
+}

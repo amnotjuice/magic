@@ -1,0 +1,187 @@
+{
+  "name": "Current clean2/admissible-TC candidate Oth preflight",
+  "status": "Val-only TC analogue plus VC cache audit; not a main-method result",
+  "standard_check": {
+    "allowed_as_main": false,
+    "reason": "Oth VC residual, natural, frozen Test protocol, and full SCI table comparison are incomplete."
+  },
+  "fixed_protocol": {
+    "tc_tau": 0.070279,
+    "tc": "alpha_T=1[margin(clean2 candidate visual-lift)+source_agree >= tc_tau]",
+    "vc": "not evaluated; route-free Val residual cache is audited",
+    "detector": "none"
+  },
+  "models": {
+    "qwen": {
+      "val_audit": {
+        "open_rows": 146,
+        "rows_with_tc": 68,
+        "skipped": {
+          "missing_tc_ViLP": 78
+        },
+        "dataset_counts": {
+          "MME": 68
+        },
+        "source_agree_counts": {
+          "0": 13,
+          "1": 55
+        },
+        "alpha_T_counts": {
+          "0": 3,
+          "1": 65
+        },
+        "vc_cache": {
+          "path": "/data/shunshungu/Self-Critical-Inference-Framework/research/log/cda_v2_oth_grec_cache/qwen_val_oth_vc_scores.jsonl",
+          "exists": false,
+          "records": 0,
+          "open_rows": 146,
+          "dataset_counts": {},
+          "route_free_ready": false,
+          "note": "route-free Oth VC requires candidate-level VC scores for every row before alpha_V can be selected on Val"
+        }
+      },
+      "comparison": [
+        {
+          "model": "qwen",
+          "variant": "baseline",
+          "B_Oth": 20.0,
+          "n_B_Oth": 45,
+          "hits_B_Oth": 9.0,
+          "vs7_B_Oth": -9.66,
+          "S_Oth": 45.83,
+          "n_S_Oth": 48,
+          "hits_S_Oth": 22.0,
+          "vs7_S_Oth": -0.15,
+          "BS_Oth": 35.29,
+          "n_BS_Oth": 68,
+          "hits_BS_Oth": 24.0,
+          "vs7_BS_Oth": -1.55,
+          "wins_vs_sci7_oth": 0,
+          "split": "Val"
+        },
+        {
+          "model": "qwen",
+          "variant": "tc_always",
+          "B_Oth": 31.11,
+          "n_B_Oth": 45,
+          "hits_B_Oth": 14.0,
+          "vs7_B_Oth": 1.45,
+          "S_Oth": 43.75,
+          "n_S_Oth": 48,
+          "hits_S_Oth": 21.0,
+          "vs7_S_Oth": -2.23,
+          "BS_Oth": 38.24,
+          "n_BS_Oth": 68,
+          "hits_BS_Oth": 26.0,
+          "vs7_BS_Oth": 1.4,
+          "wins_vs_sci7_oth": 2,
+          "split": "Val"
+        },
+        {
+          "model": "qwen",
+          "variant": "tc_admissible",
+          "B_Oth": 33.33,
+          "n_B_Oth": 45,
+          "hits_B_Oth": 15.0,
+          "vs7_B_Oth": 3.67,
+          "S_Oth": 43.75,
+          "n_S_Oth": 48,
+          "hits_S_Oth": 21.0,
+          "vs7_S_Oth": -2.23,
+          "BS_Oth": 39.71,
+          "n_BS_Oth": 68,
+          "hits_BS_Oth": 27.0,
+          "vs7_BS_Oth": 2.87,
+          "wins_vs_sci7_oth": 2,
+          "split": "Val"
+        }
+      ]
+    },
+    "llava": {
+      "val_audit": {
+        "open_rows": 201,
+        "rows_with_tc": 148,
+        "skipped": {
+          "missing_tc_MME": 53
+        },
+        "dataset_counts": {
+          "MME": 80,
+          "ViLP": 68
+        },
+        "source_agree_counts": {
+          "0": 19,
+          "1": 129
+        },
+        "alpha_T_counts": {
+          "0": 3,
+          "1": 145
+        },
+        "vc_cache": {
+          "path": "/data/shunshungu/Self-Critical-Inference-Framework/research/log/cda_v2_oth_grec_cache/llava_val_oth_vc_scores.jsonl",
+          "exists": false,
+          "records": 0,
+          "open_rows": 201,
+          "dataset_counts": {},
+          "route_free_ready": false,
+          "note": "route-free Oth VC requires candidate-level VC scores for every row before alpha_V can be selected on Val"
+        }
+      },
+      "comparison": [
+        {
+          "model": "llava",
+          "variant": "baseline",
+          "B_Oth": 20.83,
+          "n_B_Oth": 72,
+          "hits_B_Oth": 15.0,
+          "vs7_B_Oth": -17.43,
+          "S_Oth": 53.19,
+          "n_S_Oth": 94,
+          "hits_S_Oth": 50.0,
+          "vs7_S_Oth": -7.46,
+          "BS_Oth": 35.81,
+          "n_BS_Oth": 148,
+          "hits_BS_Oth": 53.0,
+          "vs7_BS_Oth": -15.45,
+          "wins_vs_sci7_oth": 0,
+          "split": "Val"
+        },
+        {
+          "model": "llava",
+          "variant": "tc_always",
+          "B_Oth": 38.89,
+          "n_B_Oth": 72,
+          "hits_B_Oth": 28.0,
+          "vs7_B_Oth": 0.63,
+          "S_Oth": 60.64,
+          "n_S_Oth": 94,
+          "hits_S_Oth": 57.0,
+          "vs7_S_Oth": -0.01,
+          "BS_Oth": 50.0,
+          "n_BS_Oth": 148,
+          "hits_BS_Oth": 74.0,
+          "vs7_BS_Oth": -1.26,
+          "wins_vs_sci7_oth": 1,
+          "split": "Val"
+        },
+        {
+          "model": "llava",
+          "variant": "tc_admissible",
+          "B_Oth": 38.89,
+          "n_B_Oth": 72,
+          "hits_B_Oth": 28.0,
+          "vs7_B_Oth": 0.63,
+          "S_Oth": 59.57,
+          "n_S_Oth": 94,
+          "hits_S_Oth": 56.0,
+          "vs7_S_Oth": -1.08,
+          "BS_Oth": 49.32,
+          "n_BS_Oth": 148,
+          "hits_BS_Oth": 73.0,
+          "vs7_BS_Oth": -1.94,
+          "wins_vs_sci7_oth": 1,
+          "split": "Val"
+        }
+      ]
+    }
+  }
+}

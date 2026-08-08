@@ -1,0 +1,10 @@
+{
+  "n": 80,
+  "metrics": {
+    "answer_format_real_hit": 0.575,
+    "max_real_hit": 0.5625,
+    "max_lift_hit": 0.5875,
+    "default_lift_hit": 0.575,
+    "answer_format_lift_hit": 0.6
+  }
+}

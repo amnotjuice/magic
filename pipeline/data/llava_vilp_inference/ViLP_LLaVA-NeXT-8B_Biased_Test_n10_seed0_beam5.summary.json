@@ -1,0 +1,17 @@
+{
+  "n": 10,
+  "metrics": {
+    "default_hit": 0.5,
+    "answer_format_hit": 0.4,
+    "paraphrase_hit": 0.3,
+    "prior_suppressed_hit": 0.0,
+    "question_tail_hit": 0.0,
+    "beam_oracle_hit": 0.8,
+    "oracle_hit": 0.8,
+    "real_verify_hit": 0.1,
+    "lift_verify_hit": 0.2,
+    "direct_real_hit": 0.3,
+    "direct_lift_hit": 0.5
+  },
+  "avg_candidates": 4.9
+}

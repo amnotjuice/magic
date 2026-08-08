@@ -1,0 +1,36 @@
+{
+  "n": {
+    "val": 68,
+    "test": 222
+  },
+  "fixed": {
+    "answer_format": {
+      "val": 0.4411764705882353,
+      "test": 0.3108108108108108
+    },
+    "binary_option_lift": {
+      "val": 0.4411764705882353,
+      "test": 0.33783783783783783
+    },
+    "direct_lift": {
+      "val": 0.38235294117647056,
+      "test": 0.35585585585585583
+    },
+    "verify_lift": {
+      "val": 0.4117647058823529,
+      "test": 0.34234234234234234
+    },
+    "real_verify": {
+      "val": 0.36764705882352944,
+      "test": 0.33783783783783783
+    }
+  },
+  "val_fit_router": {
+    "action": "binary_option_lift",
+    "feature": "verify_lift_margin",
+    "direction": "le",
+    "tau": 0.5,
+    "val_acc": 0.5147058823529411,
+    "test_acc": 0.3738738738738739
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "n": 40,
+  "metrics": {
+    "default_hit": 0.125,
+    "answer_format_hit": 0.0,
+    "paraphrase_hit": 0.05,
+    "oracle_hit": 0.175,
+    "real_verify_hit": 0.05,
+    "lift_verify_hit": 0.05,
+    "direct_real_hit": 0.075,
+    "direct_lift_hit": 0.15
+  },
+  "avg_candidates": 1.575
+}

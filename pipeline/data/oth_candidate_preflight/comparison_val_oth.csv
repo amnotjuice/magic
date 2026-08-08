@@ -1,0 +1,7 @@
+model,variant,B_Oth,n_B_Oth,hits_B_Oth,vs7_B_Oth,S_Oth,n_S_Oth,hits_S_Oth,vs7_S_Oth,BS_Oth,n_BS_Oth,hits_BS_Oth,vs7_BS_Oth,wins_vs_sci7_oth,split
+qwen,baseline,20.0,45,9.0,-9.66,45.83,48,22.0,-0.15,35.29,68,24.0,-1.55,0,Val
+qwen,tc_always,31.11,45,14.0,1.45,43.75,48,21.0,-2.23,38.24,68,26.0,1.4,2,Val
+qwen,tc_admissible,33.33,45,15.0,3.67,43.75,48,21.0,-2.23,39.71,68,27.0,2.87,2,Val
+llava,baseline,20.83,72,15.0,-17.43,53.19,94,50.0,-7.46,35.81,148,53.0,-15.45,0,Val
+llava,tc_always,38.89,72,28.0,0.63,60.64,94,57.0,-0.01,50.0,148,74.0,-1.26,1,Val
+llava,tc_admissible,38.89,72,28.0,0.63,59.57,94,56.0,-1.08,49.32,148,73.0,-1.94,1,Val

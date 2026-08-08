@@ -1,0 +1,1 @@
+{"ladder": {"t1": 3.875, "tauT": 1.8749999567866324, "t2": 1.25, "tauV": 0.5593740940093961}, "sci3": {"beta": 0.1, "alpha": 1.0, "gamma": 1.5, "theta": 0.2}, "sci5": {"beta": 0.1, "alpha": 1.0, "gamma": 2.0, "theta": 0.7}, "sci7": {"beta": 0.2, "alpha": 1.0, "gamma": 2.0, "theta": 0.5}, "gm3_lambda": 2.0}

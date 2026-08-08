@@ -1,0 +1,86 @@
+{
+  "qwen2": {
+    "n_val": 1576,
+    "n_test": 1575,
+    "fitted": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "val_acc": 90.29,
+    "base": 87.87,
+    "SCI5": 88.06,
+    "MAGIC_calibrated": 89.52,
+    "MAGIC_frozen": 89.14,
+    "cal_vs_base": {
+      "delta": 1.65,
+      "flips": "41:15",
+      "p": 0.0007
+    },
+    "cal_vs_SCI5": {
+      "delta": 1.46,
+      "flips": "33:10",
+      "p": 0.0006
+    },
+    "by_category": {
+      "adversarial": {
+        "base": 87.13,
+        "MAGIC": 89.04,
+        "n": 575
+      },
+      "popular": {
+        "base": 88.8,
+        "MAGIC": 91.2,
+        "n": 500
+      },
+      "random": {
+        "base": 87.8,
+        "MAGIC": 88.4,
+        "n": 500
+      }
+    },
+    "mean_passes": 1.29
+  },
+  "llava": {
+    "n_val": 4500,
+    "n_test": 4500,
+    "fitted": [
+      0.0,
+      0.6,
+      0.625
+    ],
+    "val_acc": 87.22,
+    "base": 86.78,
+    "SCI5": 86.93,
+    "MAGIC_calibrated": 86.62,
+    "MAGIC_frozen": 85.47,
+    "cal_vs_base": {
+      "delta": -0.16,
+      "flips": "9:16",
+      "p": 0.2295
+    },
+    "cal_vs_SCI5": {
+      "delta": -0.31,
+      "flips": "107:121",
+      "p": 0.3893
+    },
+    "by_category": {
+      "adversarial": {
+        "base": 81.67,
+        "MAGIC": 81.67,
+        "n": 1500
+      },
+      "popular": {
+        "base": 88.53,
+        "MAGIC": 88.13,
+        "n": 1500
+      },
+      "random": {
+        "base": 90.13,
+        "MAGIC": 90.07,
+        "n": 1500
+      }
+    },
+    "mean_passes": 1.42
+  }
+}

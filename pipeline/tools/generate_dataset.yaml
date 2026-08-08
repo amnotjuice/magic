@@ -1,0 +1,27 @@
+# config files
+# NOTE: result_path should point to the timestamped output directory from step0_run_basemodel.sh
+# The directory name format is: outputs/{model_name}/{timestamp}/
+# Update the timestamp suffix after running step0_run_basemodel.sh
+Qwen2-VL-7B:
+  base_name: 'Qwen2-VL-7B-Original'
+  base_result_path: './outputs/Qwen2-VL-7B-Original'
+  tcf1_name: 'Qwen2-VL-7B-TCF-V1'
+  tcf1_result_path: './outputs/Qwen2-VL-7B-TCF-V1'
+  tcf2_name: 'Qwen2-VL-7B-TCF-V2'
+  tcf2_result_path: './outputs/Qwen2-VL-7B-TCF-V2'
+  vcf1_name: 'Qwen2-VL-7B-VCF-Color0'
+  vcf1_result_path: './outputs/Qwen2-VL-7B-VCF-Color0'
+  vcf2_name: 'Qwen2-VL-7B-VCF-Noise500'
+  vcf2_result_path: './outputs/Qwen2-VL-7B-VCF-Noise500'
+
+LLaVA-NeXT-8B:
+  base_name: 'LLaVA-NeXT-8B-Original'
+  base_result_path: './outputs/LLaVA-NeXT-8B-Original'
+  tcf1_name: 'LLaVA-NeXT-8B-TCF-V1'
+  tcf1_result_path: './outputs/LLaVA-NeXT-8B-TCF-V1'
+  tcf2_name: 'LLaVA-NeXT-8B-TCF-V2'
+  tcf2_result_path: './outputs/LLaVA-NeXT-8B-TCF-V2'
+  vcf1_name: 'LLaVA-NeXT-8B-VCF-Color0'
+  vcf1_result_path: './outputs/LLaVA-NeXT-8B-VCF-Color0'
+  vcf2_name: 'LLaVA-NeXT-8B-VCF-Noise500'
+  vcf2_result_path: './outputs/LLaVA-NeXT-8B-VCF-Noise500'

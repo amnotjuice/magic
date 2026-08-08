@@ -1,0 +1,14 @@
+# Core -- everything needed for magic.py and the Tier-1 scripts in experiments/
+# (see experiments/README.md for the dependency-tier table)
+numpy
+pandas
+matplotlib
+
+# Optional -- only needed for the Tier-2 scripts in experiments/ (newer-backbone
+# generation/evaluation pipeline and a few baseline replays). Not required to
+# reproduce the paper's headline numbers via magic.py.
+# torch
+# transformers
+# pillow
+# torchvision
+# qwen-vl-utils

@@ -1,0 +1,31 @@
+{
+  "source": "ViLP_LLaVA-NeXT-8B_Biased_Test_n40_seed0_beam5_noverify.jsonl",
+  "n": 40,
+  "fixed": {
+    "default": 0.225,
+    "beam_oracle": 0.725,
+    "direct_lift": 0.325
+  },
+  "router": {
+    "rule": "switch from default to best direct_lift beam candidate only if lift(best)-lift(default) >= tau",
+    "posthoc_best": {
+      "tau": 1.8623046875,
+      "acc": 0.425
+    },
+    "simple_tau_1.5": {
+      "acc": 0.4
+    },
+    "simple_tau_2.0": {
+      "acc": 0.4,
+      "switches": 17,
+      "recover_default_wrong": 9,
+      "lose_default_correct": 2
+    },
+    "first20_fit_second20_test": {
+      "tau": 1.8623046875,
+      "val_acc": 0.5,
+      "test_acc": 0.35
+    }
+  },
+  "interpretation": "Beam proposals solve much of the candidate diversity bottleneck, but fixed visual-lift over-switches. A candidate-level lift-margin gate is the cleaner adaptive signal for short-answer Oth."
+}

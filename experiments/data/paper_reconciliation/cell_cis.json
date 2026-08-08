@@ -1,0 +1,64 @@
+{
+  "qwen": {
+    "cells": {
+      "B": {
+        "magic": 30.26,
+        "ci95_halfwidth": 2.77,
+        "n": 1084
+      },
+      "S": {
+        "magic": 48.73,
+        "ci95_halfwidth": 5.82,
+        "n": 275
+      },
+      "BS": {
+        "magic": 32.3,
+        "ci95_halfwidth": 2.58,
+        "n": 1260
+      }
+    },
+    "paired": {
+      "magic_vs_r1": {
+        "w2r": 35,
+        "r2w": 11,
+        "p": 0.0005
+      },
+      "magic_vs_always": {
+        "w2r": 11,
+        "r2w": 11,
+        "p": 1.0
+      }
+    }
+  },
+  "llava": {
+    "cells": {
+      "B": {
+        "magic": 26.95,
+        "ci95_halfwidth": 2.06,
+        "n": 1796
+      },
+      "S": {
+        "magic": 40.99,
+        "ci95_halfwidth": 3.07,
+        "n": 1010
+      },
+      "BS": {
+        "magic": 31.13,
+        "ci95_halfwidth": 1.84,
+        "n": 2467
+      }
+    },
+    "paired": {
+      "magic_vs_r1": {
+        "w2r": 24,
+        "r2w": 9,
+        "p": 0.0135
+      },
+      "magic_vs_always": {
+        "w2r": 12,
+        "r2w": 20,
+        "p": 0.2153
+      }
+    }
+  }
+}

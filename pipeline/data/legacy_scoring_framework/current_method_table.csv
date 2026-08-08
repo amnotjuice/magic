@@ -1,0 +1,3 @@
+variant,model,avg_pass,B_All,S_All,BS_All,Avg,vs7_B,vs7_S,vs7_BS
+tc_early_js_full_gray3,qwen,4.69,36.82,46.23,38.41,40.49,9.17,-0.31,6.69
+tc_early_js_full_gray3,llava,4.75,29.12,47.92,36.43,37.82,2.11,0.28,1.51

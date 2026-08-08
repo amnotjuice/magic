@@ -1,0 +1,33 @@
+{
+  "method": "short_answer_beam5_default_visual_lift",
+  "datasets": {
+    "val": "ViLP_LLaVA-NeXT-8B_Biased_Val_n68_seed0_beam5_noverify_score-default.jsonl",
+    "test": "ViLP_LLaVA-NeXT-8B_Biased_Test_n283_seed0_beam5_noverify_score-default.jsonl"
+  },
+  "metrics": {
+    "val": {
+      "default": 0.11764705882352941,
+      "direct_lift": 0.4264705882352941,
+      "beam_oracle": 0.5882352941176471
+    },
+    "test": {
+      "default": 0.13427561837455831,
+      "direct_lift": 0.38869257950530034,
+      "beam_oracle": 0.6607773851590106
+    }
+  },
+  "cost_model": {
+    "candidate_source": "default-prompt beam5 proposals",
+    "scoring_source": "default prompt only",
+    "avg_candidates_test": 4.982332155477032,
+    "extra_generation": "one beam5 generation if default greedy output cannot provide candidate list",
+    "extra_scoring_forwards": "2 * avg_candidates for real-vs-blank next-token scoring",
+    "estimated_extra_scoring_forwards_test": 9.964664310954064,
+    "removed_from_main_design": [
+      "answer_format/paraphrase scoring views",
+      "yes/no verification for short answers",
+      "margin router as default action"
+    ]
+  },
+  "interpretation": "Default-only visual-lift scoring matches the three-view scorer on full Test while cutting scoring forwards from about 6*K to 2*K. Beam oracle equals overall oracle, so semantic prompt candidates are not needed for LLaVA ViLP short-answer."
+}

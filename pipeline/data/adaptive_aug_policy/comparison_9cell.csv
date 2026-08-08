@@ -1,0 +1,11 @@
+model,version,B_MCQ,B_Oth,B_All,S_MCQ,S_Oth,S_All,BS_MCQ,BS_Oth,BS_All,note
+qwen,SCI5,24.91,25.69,25.09,47.22,42.44,44.58,28.0,33.14,29.5,paper
+qwen,SCI7,27.04,29.66,27.65,47.22,45.98,46.54,29.61,36.84,31.72,paper
+qwen,tc_aug_v2_clean2_oth_baseline,28.51,12.42,24.76,47.27,33.98,40.24,30.56,24.02,28.67,ablation
+qwen,tc_aug_v2_clean2_fixed_lift,28.51,24.85,27.65,47.27,44.34,45.72,30.56,34.38,31.66,module-level; Detection-v2 not applied
+qwen,tc_aug_v2_clean2_margin_fallback,28.51,20.0,26.52,47.27,42.72,44.86,30.56,32.42,31.09,optional; Val-fit Oth fallback only
+llava,SCI5,23.81,37.97,26.08,40.6,60.65,47.95,28.8,51.01,34.19,paper
+llava,SCI7,24.86,38.26,27.01,40.1,60.65,47.64,29.68,51.26,34.92,paper
+llava,tc_aug_v2_clean2_oth_baseline,26.61,19.77,25.5,40.4,49.48,43.7,30.73,37.31,32.33,ablation
+llava,tc_aug_v2_clean2_fixed_lift,26.61,42.69,29.23,40.4,59.17,47.23,30.73,53.27,36.22,module-level; Detection-v2 not applied
+llava,tc_aug_v2_clean2_margin_fallback,26.61,43.84,29.42,40.4,57.44,46.6,30.73,52.01,35.92,optional; Val-fit Oth fallback only

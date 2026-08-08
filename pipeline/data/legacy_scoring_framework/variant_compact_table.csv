@@ -1,0 +1,17 @@
+variant,model,avg_pass,B_All,S_All,BS_All,Avg,vs7_B,vs7_S,vs7_BS
+tc_any_flip_full,qwen,4.89,34.63,46.23,36.6,39.16,6.98,-0.31,4.88
+tc_any_flip_full,llava,4.97,27.87,47.98,35.6,37.15,0.86,0.34,0.68
+tc_two_flip_full,qwen,4.89,34.63,46.23,36.6,39.16,6.98,-0.31,4.88
+tc_two_flip_full,llava,4.97,27.91,48.05,35.66,37.21,0.9,0.41,0.74
+tc_two_flip_light_strong,qwen,3.83,35.41,47.09,37.51,40.0,7.76,0.55,5.79
+tc_two_flip_light_strong,llava,3.41,27.59,46.41,34.8,36.27,0.58,-1.23,-0.12
+tc_two_flip_light_center,qwen,3.83,32.01,38.7,33.39,34.7,4.36,-7.84,1.67
+tc_two_flip_light_center,llava,3.41,23.63,42.19,31.8,32.54,-3.38,-5.45,-3.12
+tc_two_flip_light_strong_vconly_light,qwen,3.83,29.82,47.95,33.16,36.98,2.17,1.41,1.44
+tc_two_flip_light_strong_vconly_light,llava,3.41,26.7,46.54,34.22,35.82,-0.31,-1.1,-0.7
+tc_two_flip_light_center_vconly_light,qwen,3.83,29.47,38.87,31.36,33.23,1.82,-7.67,-0.36
+tc_two_flip_light_center_vconly_light,llava,3.41,22.97,42.19,31.4,32.19,-4.04,-5.45,-3.52
+tc_two_flip_full_gray3,qwen,4.9,37.6,46.23,39.03,40.95,9.95,-0.31,7.31
+tc_two_flip_full_gray3,llava,4.97,29.68,47.98,36.8,38.15,2.67,0.34,1.88
+tc_early_js_full_gray3,qwen,4.69,36.82,46.23,38.41,40.49,9.17,-0.31,6.69
+tc_early_js_full_gray3,llava,4.75,29.12,47.92,36.43,37.82,2.11,0.28,1.51

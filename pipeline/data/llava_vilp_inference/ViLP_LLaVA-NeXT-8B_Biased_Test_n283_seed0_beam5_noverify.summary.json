@@ -1,0 +1,17 @@
+{
+  "n": 283,
+  "metrics": {
+    "default_hit": 0.13427561837455831,
+    "answer_format_hit": 0.10954063604240283,
+    "paraphrase_hit": 0.1166077738515901,
+    "prior_suppressed_hit": 0.0,
+    "question_tail_hit": 0.0,
+    "beam_oracle_hit": 0.6607773851590106,
+    "oracle_hit": 0.6607773851590106,
+    "real_verify_hit": 0.0,
+    "lift_verify_hit": 0.0,
+    "direct_real_hit": 0.12014134275618374,
+    "direct_lift_hit": 0.38869257950530034
+  },
+  "avg_candidates": 4.982332155477032
+}

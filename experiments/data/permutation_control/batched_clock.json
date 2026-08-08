@@ -1,0 +1,13 @@
+{
+  "sci5_batched": 1.0669,
+  "sci7_batched": 1.9165,
+  "malt_s0": 0.1069,
+  "malt_rung1": 0.4545,
+  "malt_rung2": 0.4541,
+  "f1": 0.929,
+  "f2": 0.402,
+  "malt_mean_path": 0.7117,
+  "malt_worst_path": 1.0155,
+  "ratio_mean_vs_sci7": 0.371,
+  "ratio_mean_vs_sci5": 0.667
+}

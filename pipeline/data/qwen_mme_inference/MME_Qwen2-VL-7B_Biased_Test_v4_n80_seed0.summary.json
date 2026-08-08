@@ -1,0 +1,17 @@
+{
+  "n": 80,
+  "metrics": {
+    "default_hit": 0.3125,
+    "answer_format_hit": 0.3375,
+    "paraphrase_hit": 0.275,
+    "oracle_hit": 1.0,
+    "real_verify_hit": 0.3125,
+    "lift_verify_hit": 0.3125,
+    "direct_real_hit": 0.325,
+    "direct_lift_hit": 0.325,
+    "binary_option_real_hit": 0.2875,
+    "binary_option_lift_hit": 0.3375,
+    "hybrid_lift_hit": 0.3375
+  },
+  "avg_candidates": 2.0
+}

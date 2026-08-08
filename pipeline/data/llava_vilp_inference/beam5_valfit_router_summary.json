@@ -1,0 +1,79 @@
+{
+  "val_path": "research/log/tc_open_llava_short_probe/ViLP_LLaVA-NeXT-8B_Biased_Val_n68_seed0_beam5_noverify.jsonl",
+  "test_path": "research/log/tc_open_llava_short_probe/ViLP_LLaVA-NeXT-8B_Biased_Test_n80_seed0_beam5_noverify.jsonl",
+  "val_n": 68,
+  "test_n": 80,
+  "fixed": {
+    "val": {
+      "default": 0.11764705882352941,
+      "direct_lift": 0.4117647058823529,
+      "beam_oracle": 0.5882352941176471
+    },
+    "test": {
+      "default": 0.1625,
+      "direct_lift": 0.375,
+      "beam_oracle": 0.7
+    }
+  },
+  "val_fit_margin_router": {
+    "tau": 1.078125,
+    "val_acc": 0.4264705882352941,
+    "test_acc": 0.375,
+    "val_stats": {
+      "switches": 42,
+      "recover_default_wrong": 22,
+      "lose_default_correct": 1
+    },
+    "test_stats": {
+      "switches": 55,
+      "recover_default_wrong": 25,
+      "lose_default_correct": 8
+    }
+  },
+  "conservative_val_fit_margin_router": {
+    "criterion": "maximize Val accuracy subject to losing zero default-correct Val samples",
+    "tau": 1.3749990463256836,
+    "val_acc": 0.4264705882352941,
+    "test_acc": 0.425,
+    "val_stats": {
+      "switches": 39,
+      "recover_default_wrong": 21,
+      "lose_default_correct": 0
+    },
+    "test_stats": {
+      "switches": 50,
+      "recover_default_wrong": 25,
+      "lose_default_correct": 4
+    }
+  },
+  "simple_margin_router": {
+    "tau_1.5": {
+      "val_acc": 0.4117647058823529,
+      "test_acc": 0.4125,
+      "val_stats": {
+        "switches": 37,
+        "recover_default_wrong": 20,
+        "lose_default_correct": 0
+      },
+      "test_stats": {
+        "switches": 49,
+        "recover_default_wrong": 24,
+        "lose_default_correct": 4
+      }
+    },
+    "tau_2.0": {
+      "val_acc": 0.39705882352941174,
+      "test_acc": 0.4,
+      "val_stats": {
+        "switches": 32,
+        "recover_default_wrong": 19,
+        "lose_default_correct": 0
+      },
+      "test_stats": {
+        "switches": 40,
+        "recover_default_wrong": 22,
+        "lose_default_correct": 3
+      }
+    }
+  }
+}

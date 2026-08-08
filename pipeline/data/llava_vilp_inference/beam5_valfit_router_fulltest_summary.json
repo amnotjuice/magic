@@ -1,0 +1,79 @@
+{
+  "val_path": "research/log/tc_open_llava_short_probe/ViLP_LLaVA-NeXT-8B_Biased_Val_n68_seed0_beam5_noverify.jsonl",
+  "test_path": "research/log/tc_open_llava_short_probe/ViLP_LLaVA-NeXT-8B_Biased_Test_n283_seed0_beam5_noverify.jsonl",
+  "val_n": 68,
+  "test_n": 283,
+  "fixed": {
+    "val": {
+      "default": 0.11764705882352941,
+      "direct_lift": 0.4117647058823529,
+      "beam_oracle": 0.5882352941176471
+    },
+    "test": {
+      "default": 0.13427561837455831,
+      "direct_lift": 0.38869257950530034,
+      "beam_oracle": 0.6607773851590106
+    }
+  },
+  "val_fit_margin_router": {
+    "tau": 1.078125,
+    "val_acc": 0.4264705882352941,
+    "test_acc": 0.3674911660777385,
+    "val_stats": {
+      "switches": 42,
+      "recover_default_wrong": 22,
+      "lose_default_correct": 1
+    },
+    "test_stats": {
+      "switches": 186,
+      "recover_default_wrong": 80,
+      "lose_default_correct": 14
+    }
+  },
+  "conservative_val_fit_margin_router": {
+    "criterion": "maximize Val accuracy subject to losing zero default-correct Val samples",
+    "tau": 1.3749990463256836,
+    "val_acc": 0.4264705882352941,
+    "test_acc": 0.37809187279151946,
+    "val_stats": {
+      "switches": 39,
+      "recover_default_wrong": 21,
+      "lose_default_correct": 0
+    },
+    "test_stats": {
+      "switches": 168,
+      "recover_default_wrong": 77,
+      "lose_default_correct": 8
+    }
+  },
+  "simple_margin_router": {
+    "tau_1.5": {
+      "val_acc": 0.4117647058823529,
+      "test_acc": 0.3745583038869258,
+      "val_stats": {
+        "switches": 37,
+        "recover_default_wrong": 20,
+        "lose_default_correct": 0
+      },
+      "test_stats": {
+        "switches": 167,
+        "recover_default_wrong": 76,
+        "lose_default_correct": 8
+      }
+    },
+    "tau_2.0": {
+      "val_acc": 0.39705882352941174,
+      "test_acc": 0.3392226148409894,
+      "val_stats": {
+        "switches": 32,
+        "recover_default_wrong": 19,
+        "lose_default_correct": 0
+      },
+      "test_stats": {
+        "switches": 138,
+        "recover_default_wrong": 65,
+        "lose_default_correct": 7
+      }
+    }
+  }
+}

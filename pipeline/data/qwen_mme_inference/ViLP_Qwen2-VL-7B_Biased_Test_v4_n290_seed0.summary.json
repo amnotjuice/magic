@@ -1,0 +1,18 @@
+{
+  "n": 290,
+  "metrics": {
+    "default_hit": 0.18620689655172415,
+    "answer_format_hit": 0.25517241379310346,
+    "paraphrase_hit": 0.32068965517241377,
+    "oracle_hit": 0.41724137931034483,
+    "real_verify_hit": 0.2689655172413793,
+    "lift_verify_hit": 0.35517241379310344,
+    "direct_real_hit": 0.2482758620689655,
+    "direct_lift_hit": 0.33448275862068966,
+    "binary_option_real_hit": 0.0,
+    "binary_option_lift_hit": 0.0,
+    "hybrid_lift_hit": 0.35517241379310344
+  },
+  "avg_candidates": 1.686206896551724,
+  "binary_rows": 0
+}

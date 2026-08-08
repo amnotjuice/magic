@@ -1,0 +1,198 @@
+{
+  "qwen": {
+    "MCQ": {
+      "n": 1260,
+      "exit_hist": {
+        "1": 89,
+        "4": 702,
+        "7": 469
+      },
+      "avg_passes": 4.905,
+      "avg_gen_passes": 0.0,
+      "avg_score_passes": 4.905,
+      "worst_passes": 7,
+      "fire_rate_rung1": 0.929,
+      "fire_rate_rung2": 0.372,
+      "curve": [
+        {
+          "level": "rung0 (base only)",
+          "avg_passes": 1.0,
+          "acc": 8.81
+        },
+        {
+          "level": "rung1 (+prior-isolation)",
+          "avg_passes": 3.788,
+          "acc": 28.73
+        },
+        {
+          "level": "rung2 (+visual-residual, full)",
+          "avg_passes": 4.905,
+          "acc": 30.48
+        }
+      ]
+    },
+    "Oth": {
+      "n": 512,
+      "exit_hist": {
+        "1": 7,
+        "3": 8,
+        "4": 114,
+        "5": 191,
+        "6": 192
+      },
+      "avg_passes": 5.066,
+      "avg_gen_passes": 1.699,
+      "avg_score_passes": 3.367,
+      "worst_passes": 6,
+      "fire_rate_rung1": 0.971,
+      "fire_rate_rung2": 0.572,
+      "curve": [
+        {
+          "level": "rung0 (base only)",
+          "avg_passes": 2.133,
+          "acc": 23.63
+        },
+        {
+          "level": "rung1 (+prior-isolation)",
+          "avg_passes": 4.494,
+          "acc": 31.84
+        },
+        {
+          "level": "rung2 (+visual-residual, full)",
+          "avg_passes": 5.066,
+          "acc": 34.96
+        }
+      ]
+    },
+    "biased_overall": {
+      "n": 1772,
+      "exit_hist": {
+        "1": 96,
+        "3": 8,
+        "4": 816,
+        "5": 191,
+        "6": 192,
+        "7": 469
+      },
+      "avg_passes": 4.951,
+      "avg_gen_passes": 0.491,
+      "avg_score_passes": 4.46,
+      "worst_passes": 7,
+      "fire_rate_rung1": 0.941,
+      "fire_rate_rung2": 0.43,
+      "curve": [
+        {
+          "level": "rung0 (base only)",
+          "avg_passes": 1.327,
+          "acc": 13.09
+        },
+        {
+          "level": "rung1 (+prior-isolation)",
+          "avg_passes": 3.992,
+          "acc": 29.63
+        },
+        {
+          "level": "rung2 (+visual-residual, full)",
+          "avg_passes": 4.951,
+          "acc": 31.77
+        }
+      ]
+    }
+  },
+  "llava": {
+    "MCQ": {
+      "n": 2467,
+      "exit_hist": {
+        "1": 90,
+        "4": 1663,
+        "7": 714
+      },
+      "avg_passes": 4.759,
+      "avg_gen_passes": 0.0,
+      "avg_score_passes": 4.759,
+      "worst_passes": 7,
+      "fire_rate_rung1": 0.964,
+      "fire_rate_rung2": 0.289,
+      "curve": [
+        {
+          "level": "rung0 (base only)",
+          "avg_passes": 1.0,
+          "acc": 15.85
+        },
+        {
+          "level": "rung1 (+prior-isolation)",
+          "avg_passes": 3.891,
+          "acc": 29.71
+        },
+        {
+          "level": "rung2 (+visual-residual, full)",
+          "avg_passes": 4.759,
+          "acc": 30.36
+        }
+      ]
+    },
+    "Oth": {
+      "n": 796,
+      "exit_hist": {
+        "1": 15,
+        "4": 610,
+        "5": 171
+      },
+      "avg_passes": 4.158,
+      "avg_gen_passes": 0.356,
+      "avg_score_passes": 3.803,
+      "worst_passes": 5,
+      "fire_rate_rung1": 0.981,
+      "fire_rate_rung2": 0.215,
+      "curve": [
+        {
+          "level": "rung0 (base only)",
+          "avg_passes": 1.0,
+          "acc": 39.32
+        },
+        {
+          "level": "rung1 (+prior-isolation)",
+          "avg_passes": 3.943,
+          "acc": 52.26
+        },
+        {
+          "level": "rung2 (+visual-residual, full)",
+          "avg_passes": 4.158,
+          "acc": 51.63
+        }
+      ]
+    },
+    "biased_overall": {
+      "n": 3263,
+      "exit_hist": {
+        "1": 105,
+        "4": 2273,
+        "5": 171,
+        "7": 714
+      },
+      "avg_passes": 4.612,
+      "avg_gen_passes": 0.087,
+      "avg_score_passes": 4.526,
+      "worst_passes": 7,
+      "fire_rate_rung1": 0.968,
+      "fire_rate_rung2": 0.271,
+      "curve": [
+        {
+          "level": "rung0 (base only)",
+          "avg_passes": 1.0,
+          "acc": 21.58
+        },
+        {
+          "level": "rung1 (+prior-isolation)",
+          "avg_passes": 3.903,
+          "acc": 35.21
+        },
+        {
+          "level": "rung2 (+visual-residual, full)",
+          "avg_passes": 4.612,
+          "acc": 35.55
+        }
+      ]
+    }
+  }
+}

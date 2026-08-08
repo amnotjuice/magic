@@ -1,0 +1,12 @@
+{
+  "n": 2,
+  "metrics": {
+    "default_hit": 0.5,
+    "answer_format_hit": 0.0,
+    "paraphrase_hit": 0.0,
+    "oracle_hit": 0.5,
+    "direct_real_hit": 0.5,
+    "direct_lift_hit": 0.0
+  },
+  "avg_candidates": 2.0
+}

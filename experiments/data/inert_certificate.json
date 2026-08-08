@@ -1,0 +1,18 @@
+{
+  "qwen": {
+    "biased_certified": 97,
+    "biased_skipped": 104,
+    "biased_rate": 93.27,
+    "natural_certified": 7745,
+    "natural_skipped": 9104,
+    "natural_rate": 85.07
+  },
+  "llava": {
+    "biased_certified": 103,
+    "biased_skipped": 105,
+    "biased_rate": 98.1,
+    "natural_certified": 5997,
+    "natural_skipped": 6362,
+    "natural_rate": 94.26
+  }
+}

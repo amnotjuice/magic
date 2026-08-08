@@ -1,0 +1,62 @@
+{
+  "qwen2": {
+    "B": {
+      "orig": {
+        "base": 10.98,
+        "malt": 30.49,
+        "delta": 19.51
+      },
+      "perm": {
+        "base": 23.17,
+        "malt": 33.74,
+        "delta": 10.57
+      },
+      "n": 246,
+      "delta_survival": 0.542
+    },
+    "BS": {
+      "orig": {
+        "base": 15.31,
+        "malt": 32.31,
+        "delta": 17.01
+      },
+      "perm": {
+        "base": 26.19,
+        "malt": 36.39,
+        "delta": 10.2
+      },
+      "n": 294,
+      "delta_survival": 0.6
+    }
+  },
+  "llava": {
+    "B": {
+      "orig": {
+        "base": 12.61,
+        "malt": 26.05,
+        "delta": 13.45
+      },
+      "perm": {
+        "base": 21.22,
+        "malt": 30.04,
+        "delta": 8.82
+      },
+      "n": 476,
+      "delta_survival": 0.656
+    },
+    "BS": {
+      "orig": {
+        "base": 19.72,
+        "malt": 30.83,
+        "delta": 11.11
+      },
+      "perm": {
+        "base": 26.13,
+        "malt": 34.43,
+        "delta": 8.29
+      },
+      "n": 639,
+      "delta_survival": 0.746
+    }
+  }
+}

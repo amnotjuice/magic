@@ -1,0 +1,13 @@
+{
+  "n": 2467,
+  "MAGIC_MCQ_BS": 30.04,
+  "SCI5_reimpl_MCQ_BS": 28.17,
+  "base_MCQ_BS": 15.85,
+  "published_MAGIC": 31.13,
+  "published_SCI5": 28.8,
+  "paired_McNemar": {
+    "MAGIC_right_SCI_wrong": 174,
+    "SCI_right_MAGIC_wrong": 128,
+    "p_two_sided": 0.0095
+  }
+}
